@@ -39,6 +39,9 @@ public class Trabalho1 {
                     System.out.print("Digite um número: ");
                     number = input.nextInt();
 
+                    if(number<=1)
+                        primo = 0;
+                    else{
                     while (aux < number && primo == 1) {
 
                         if ((number % aux) == 0) {
@@ -48,7 +51,7 @@ public class Trabalho1 {
                         }
 
                         aux++;
-                    }
+                    }}
                     if (primo == 1) {
                         System.out.println("O número " + number + " é primo");
                     } else {
